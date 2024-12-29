@@ -8,56 +8,53 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
     <body class="is-preload">
-
-        
+ 
         <div id="wrapper">
-    
-                <div id="main">
-                        <section class="post">
-                            <header class="major">
-                                <h1>Why Bitcoin</h1>
-                            </header>
-                            <div class="pdfWrapper">
-                                <iframe src="https://docs.google.com/viewer?url=https://portiz01.github.io/Pablo/images/whyBitcoin.pdf&embedded=true" ></iframe>
-                            </div>
-                            <br/>
-                            <br/>
-                            <header class="align-center">
-                                <h2>Ask me a question!</h2>
-                            </header>
-                            <div>
-                                <textarea 
-                                id="message" rows="5" cols="40" 
-                                placeholder="Enter your question here or email me: pab.ortiz@outlook.com" 
-                                style="resize: none;"></textarea>
-                            </div>
-                            <br/>
-                              <button onclick="sendMessage()">Send Message</button>
-                            
-                              <script>
-                                function sendMessage() {
-                                  const message = document.getElementById('message').value;
-                            
-                                  // Replace with your actual email address
-                                  const recipientEmail = 'pab.ortiz@outlook.com';
-                            
-                                  // Create email subject
-                                  const subject = 'Why Bitcoin Question';
-                            
-                                  // Create email body
-                                  const body = `${message}`;
-                            
-                                  // Create email URL
-                                  const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-                            
-                                  // Open the email client
-                                  window.location.href = mailtoLink;
-                                }
-                              </script>
-                            
-                        </section>
-                </div>
-
+            <div id="main">
+                <section class="post">
+                    <header class="major">
+                        <h1>Why Bitcoin</h1>
+                    </header>
+                    <div class="pdfWrapper">
+                        <iframe src="https://docs.google.com/viewer?url=https://portiz01.github.io/Pablo/images/whyBitcoin.pdf&embedded=true" ></iframe>
+                    </div>
+                    <br/>
+                    <br/>
+                    <header class="align-center">
+                        <h2>Ask me a question!</h2>
+                    </header>
+                    <div>
+                        <textarea 
+                        id="message" rows="5" cols="40" 
+                        placeholder="Enter your question here or email me: pab.ortiz@outlook.com" 
+                        style="resize: none;"></textarea>
+                    </div>
+                    <br/>
+                        <button onclick="sendMessage()">Send Message</button>
+                    
+                        <script>
+                        function sendMessage() {
+                            const message = document.getElementById('message').value;
+                    
+                            // Replace with your actual email address
+                            const recipientEmail = 'pab.ortiz@outlook.com';
+                    
+                            // Create email subject
+                            const subject = 'Why Bitcoin Question';
+                    
+                            // Create email body
+                            const body = `${message}`;
+                    
+                            // Create email URL
+                            const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                    
+                            // Open the email client
+                            window.location.href = mailtoLink;
+                        }
+                        </script>
+                    
+                </section>
+            </div>
         </div>
     </body>
 </html>
