@@ -99,8 +99,12 @@ h1{
 #todoName-input:focus{
     outline:none;
 }
-
-
+#todoDescription-input:focus{
+    outline:none;
+}
+#todoContact-input:focus{
+    outline:none;
+}
 form{
     position: relative;
 }
